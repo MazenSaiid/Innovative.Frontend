@@ -1,0 +1,30 @@
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">PhoneNumber</th>
+        <th scope="col">Email</th>
+        <th scope="col">HomeAddress</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of clients">
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.name}}</td>
+        <td>{{item.phoneNumber}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.homeAddress}}</td>
+        <td>
+          <button mat-button (click)="openUpdateDialog(item)" class="btn btn-warning">Update User</button>
+          <button class="btn btn-danger mx-3" (click)="delete(item.id)">Delete User</button>
+          <button class="btn btn-primary" (click)="sendEmail(item.email)">Send an Email</button>
+        </td>
+      </tr>
+    </tbody>
+  </table> 
+  <div class="col-6 offset-9">
+    <button class="btn btn-success d-md-block" style="color: aliceblue;" (click)="openAddDialog()">Create a new User</button>
+  </div>
+

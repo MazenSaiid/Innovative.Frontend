@@ -1,0 +1,25 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.section {
+    padding: 50px 0;
+}
+
+.title {
+    font-size: 35px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 25px;
+    color: #666;
+    margin-bottom: 30px;
+}
+p{
+    font-size: 15px;
+    font-weight: 500;
+    
+}
